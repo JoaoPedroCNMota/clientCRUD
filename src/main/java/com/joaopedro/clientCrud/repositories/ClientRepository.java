@@ -7,7 +7,6 @@ package com.joaopedro.clientCrud.repositories;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.joaopedro.clientCrud.classes.Client;
-import java.util.List;
 import org.springframework.stereotype.Repository;
 
 /**

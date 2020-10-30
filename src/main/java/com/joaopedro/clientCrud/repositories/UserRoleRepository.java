@@ -6,14 +6,15 @@
 package com.joaopedro.clientCrud.repositories;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.joaopedro.clientCrud.classes.Address;
+import com.joaopedro.clientCrud.classes.UserRole;
 import org.springframework.stereotype.Repository;
 
 /**
  *
  * @author joaopedrocnmota
  */
+
 @Repository
-public interface AddressRepository extends JpaRepository<Address, Integer>{
+public interface UserRoleRepository extends JpaRepository<UserRole, Integer>{
 
 }

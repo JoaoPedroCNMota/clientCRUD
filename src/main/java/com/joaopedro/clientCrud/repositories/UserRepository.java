@@ -6,7 +6,7 @@
 package com.joaopedro.clientCrud.repositories;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.joaopedro.clientCrud.classes.User;
+import com.joaopedro.clientCrud.classes.UserS;
 import org.springframework.stereotype.Repository;
 
 /**
@@ -15,6 +15,6 @@ import org.springframework.stereotype.Repository;
  */
 
 @Repository
-public interface UserRepository extends JpaRepository<User, Integer>{
-    User findByLoginAndPass(String login, String pass);
+public interface UserRepository extends JpaRepository<UserS, Integer>{
+    UserS findByLogin(String login);
 }
