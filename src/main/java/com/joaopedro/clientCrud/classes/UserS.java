@@ -22,7 +22,11 @@ import org.springframework.security.core.userdetails.UserDetails;
 @Entity
 public class UserS implements UserDetails {
 
-    @Id
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	@Id
     private String login;
     private String pass;
     @ManyToMany
