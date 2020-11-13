@@ -6,6 +6,8 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Objects;
 import java.util.Set;
+
+import javax.persistence.CascadeType;
 import javax.persistence.CollectionTable;
 import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
@@ -28,7 +30,7 @@ public class Client {
     private String cpf;
     
     @JsonManagedReference
-    @OneToMany(mappedBy = "client")
+    @OneToMany(mappedBy = "client", cascade=CascadeType.ALL)
     private List<Phone> phone = new ArrayList<>();
     
     @ElementCollection
@@ -36,7 +38,7 @@ public class Client {
     private Set<String> email = new HashSet<>();
     
     @JsonManagedReference
-    @OneToMany(mappedBy = "client")
+    @OneToMany(mappedBy = "client", cascade=CascadeType.ALL)
     private List<Address> address = new ArrayList<>();
 
     public Client() {

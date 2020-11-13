@@ -43,24 +43,19 @@ public class ClientCrudApplication implements CommandLineRunner {
         userRoleRepository.saveAll(Arrays.asList(userRole, userRole2));
         
         Client c1 = new Client(null, "João Pedro Mota", "03396760857");
-        c1.getEmail().addAll(Arrays.asList("joaopedrocnmota@gmail.com", "joao.mota@cjr.org.br"));
+        c1.getEmail().addAll(Arrays.asList("joaopedrocnmota@gmail.com"));
         Phone p1 = new Phone(null, 1, "767562819", c1);
-        Phone p2 = new Phone(null, 2, "888888888", c1);
         Address a1 = new Address(null, "72720150", "logradouro logradouro",
                 "setor tradicional",
                 "Brazlândia", "DF",
                 "complemento complemento", c1);
-        Address a2 = new Address(null, "70000000", "logradouro logradouro",
-                "vendinha",
-                "Vendinha", "GO",
-                "complemento complemento", c1);
 
-        c1.getPhone().addAll(Arrays.asList(p1, p2));
+        c1.getPhone().addAll(Arrays.asList(p1));
         c1.getAddress().addAll(Arrays.asList(a1));
 
         clientRepository.saveAll(Arrays.asList(c1));
-        phoneRepository.saveAll(Arrays.asList(p1, p2));
-        addressRepository.saveAll(Arrays.asList(a1, a2));
+        phoneRepository.saveAll(Arrays.asList(p1));
+        addressRepository.saveAll(Arrays.asList(a1));
     }
 
 }
