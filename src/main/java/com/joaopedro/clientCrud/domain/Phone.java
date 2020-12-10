@@ -1,5 +1,5 @@
 
-package com.joaopedro.clientCrud.classes;
+package com.joaopedro.clientCrud.domain;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import javax.persistence.Entity;

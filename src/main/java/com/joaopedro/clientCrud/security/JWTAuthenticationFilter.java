@@ -6,7 +6,7 @@
 package com.joaopedro.clientCrud.security;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.joaopedro.clientCrud.classes.UserS;
+import com.joaopedro.clientCrud.domain.UserS;
 import com.joaopedro.clientCrud.services.LoginDTO;
 import java.io.IOException;
 import java.util.ArrayList;

@@ -1,9 +1,9 @@
 package com.joaopedro.clientCrud;
 
-import com.joaopedro.clientCrud.classes.Address;
-import com.joaopedro.clientCrud.classes.Phone;
-import com.joaopedro.clientCrud.classes.Client;
-import com.joaopedro.clientCrud.classes.UserRole;
+import com.joaopedro.clientCrud.domain.Address;
+import com.joaopedro.clientCrud.domain.Client;
+import com.joaopedro.clientCrud.domain.Phone;
+import com.joaopedro.clientCrud.domain.UserRole;
 import com.joaopedro.clientCrud.repositories.AddressRepository;
 import com.joaopedro.clientCrud.repositories.PhoneRepository;
 import java.util.Arrays;

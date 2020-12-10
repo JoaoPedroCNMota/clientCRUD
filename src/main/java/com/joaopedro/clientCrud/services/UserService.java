@@ -1,11 +1,12 @@
 package com.joaopedro.clientCrud.services;
 
-import com.joaopedro.clientCrud.classes.UserRole;
-import com.joaopedro.clientCrud.classes.UserS;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.joaopedro.clientCrud.domain.UserRole;
+import com.joaopedro.clientCrud.domain.UserS;
 import com.joaopedro.clientCrud.repositories.UserRepository;
 import com.joaopedro.clientCrud.repositories.UserRoleRepository;
 import java.util.List;

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.joaopedro.clientCrud.classes;
+package com.joaopedro.clientCrud.domain;
 
 import java.util.List;
 import javax.persistence.Entity;

@@ -5,8 +5,9 @@
  */
 package com.joaopedro.clientCrud.services;
 
+import com.joaopedro.clientCrud.domain.UserS;
 import com.joaopedro.clientCrud.repositories.UserRepository;
-import com.joaopedro.clientCrud.classes.UserS;
+
 import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.User;

@@ -1,12 +1,11 @@
 package com.joaopedro.clientCrud.services;
 
-import com.joaopedro.clientCrud.classes.Address;
-import com.joaopedro.clientCrud.classes.Client;
-import com.joaopedro.clientCrud.classes.Phone;
+import com.joaopedro.clientCrud.domain.Address;
+import com.joaopedro.clientCrud.domain.Client;
+import com.joaopedro.clientCrud.domain.Phone;
 import com.joaopedro.clientCrud.repositories.AddressRepository;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
